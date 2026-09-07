@@ -1,0 +1,1321 @@
+/* ========================================
+   RESET
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ========================================
+   BODY
+======================================== */
+
+body {
+    min-height: 100vh;
+
+    background: #090913;
+
+    color: #ffffff;
+
+    font-family: Arial, sans-serif;
+}
+
+
+/* ========================================
+   MAIN
+======================================== */
+
+main {
+    width: 100%;
+}
+
+
+/* ========================================
+   COMMON SECTION
+======================================== */
+
+.section {
+    position: relative;
+
+    width: 100%;
+    min-height: 100vh;
+
+    overflow: hidden;
+}
+
+
+/* ========================================
+   HERO
+======================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Great+Vibes&family=Poppins:wght@300;400;500&display=swap');
+
+
+/* =========================================
+   HERO SECTION
+========================================= */
+
+.birthday-hero {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 70% 45%,
+            rgba(120, 35, 45, 0.30),
+            transparent 40%
+        ),
+        radial-gradient(
+            circle at 30% 80%,
+            rgba(100, 30, 40, 0.18),
+            transparent 40%
+        ),
+        #090913;
+
+    border: 1px solid rgba(255, 150, 130, 0.55);
+    border-radius: 18px;
+
+    margin: 14px 3%;
+    color: #fff;
+}
+
+
+/* =========================================
+   DECORATIVE HEARTS
+========================================= */
+
+.hero-hearts span {
+    position: absolute;
+    color: rgba(255, 105, 120, 0.75);
+    font-size: 15px;
+
+    animation: floatingHeart 5s ease-in-out infinite;
+}
+
+.hero-hearts span:nth-child(1) {
+    top: 15%;
+    left: 4%;
+}
+
+.hero-hearts span:nth-child(2) {
+    top: 10%;
+    left: 25%;
+}
+
+.hero-hearts span:nth-child(3) {
+    top: 30%;
+    left: 45%;
+}
+
+.hero-hearts span:nth-child(4) {
+    top: 42%;
+    left: 8%;
+}
+
+.hero-hearts span:nth-child(5) {
+    top: 65%;
+    left: 50%;
+}
+
+.hero-hearts span:nth-child(6) {
+    top: 75%;
+    left: 90%;
+}
+
+.hero-hearts span:nth-child(7) {
+    top: 22%;
+    right: 5%;
+}
+
+@keyframes floatingHeart {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0.4;
+    }
+
+    50% {
+        transform: translateY(-12px) rotate(10deg);
+        opacity: 1;
+    }
+}
+
+
+/* =========================================
+   TOP BAR
+========================================= */
+
+.hero-top {
+    position: relative;
+    z-index: 5;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px 28px;
+}
+
+.special-one {
+    font-family: "Caveat", cursive;
+    font-size: 22px;
+    color: #f8ddd4;
+}
+
+.special-one span {
+    color: #ff6975;
+    font-size: 24px;
+}
+
+
+/* =========================================
+   MUSIC BUTTON
+========================================= */
+
+.music-btn {
+    border: none;
+    cursor: pointer;
+
+    padding: 9px 20px;
+    border-radius: 30px;
+
+    background: linear-gradient(
+        135deg,
+        #ff7784,
+        #ed6171
+    );
+
+    color: #190c12;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+
+    box-shadow: 0 0 20px rgba(255, 95, 110, 0.35);
+
+    transition: 0.3s ease;
+}
+
+.music-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 28px rgba(255, 95, 110, 0.55);
+}
+
+
+/* =========================================
+   HERO CONTENT
+========================================= */
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 1200px;
+    margin: auto;
+
+    min-height: calc(100vh - 130px);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px 70px 70px;
+}
+
+
+/* =========================================
+   LEFT TEXT
+========================================= */
+
+.hero-text {
+    width: 48%;
+    padding-left: 20px;
+}
+
+.birthday-title {
+    font-family: "Caveat", cursive;
+
+    font-size: clamp(38px, 4vw, 58px);
+
+    color: #ff6877;
+
+    margin-bottom: -5px;
+}
+
+.hero-text h1 {
+    margin: 0;
+
+    font-family: "Great Vibes", cursive;
+
+    font-size: clamp(58px, 6vw, 86px);
+
+    line-height: 1.1;
+
+    font-weight: 400;
+
+    color: #f8ded5;
+
+    text-shadow: 0 0 20px rgba(255, 180, 160, 0.15);
+}
+
+.title-hearts {
+    color: #ff6978;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 40px;
+
+    margin-left: 8px;
+}
+
+.hero-text p {
+    margin-top: 25px;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    color: #f0d8d1;
+}
+
+
+/* =========================================
+   SURPRISE BUTTON
+========================================= */
+
+.surprise-btn {
+    margin-top: 20px;
+
+    padding: 13px 28px;
+
+    border: none;
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    background: linear-gradient(
+        135deg,
+        #ff7482,
+        #ee6472
+    );
+
+    color: #160b10;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    box-shadow:
+        0 5px 25px rgba(255, 90, 110, 0.28);
+
+    transition: all 0.3s ease;
+}
+
+.surprise-btn:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 30px rgba(255, 90, 110, 0.45);
+}
+
+
+/* =========================================
+   IMAGE SLIDER
+========================================= */
+
+.hero-slider {
+    position: relative;
+
+    width: 48%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-image-wrapper {
+    position: relative;
+
+    width: min(420px, 100%);
+
+    padding: 10px 10px 45px;
+
+    background: #f5d8cb;
+
+    box-shadow:
+        0 10px 45px rgba(0, 0, 0, 0.45),
+        0 0 30px rgba(255, 110, 110, 0.15);
+
+    transform: rotate(1deg);
+
+    transition: transform 0.3s ease;
+}
+
+.slider-image-wrapper:hover {
+    transform: rotate(0deg) scale(1.015);
+}
+
+
+/* Image */
+
+.slider-image {
+    display: block;
+
+    width: 100%;
+    aspect-ratio: 1 / 0.88;
+
+    object-fit: contain;
+
+    opacity: 0;
+
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+
+    transform: scale(1.04);
+}
+
+.slider-image.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+/* =========================================
+   POLAROID CAPTION
+========================================= */
+
+.polaroid-caption {
+    position: absolute;
+
+    left: 0;
+    bottom: 7px;
+
+    width: 100%;
+
+    padding: 0 15px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: "Caveat", cursive;
+
+    font-size: 19px;
+
+    color: #171017;
+}
+
+.polaroid-caption span:last-child {
+    color: #ff6875;
+    font-size: 25px;
+}
+
+
+/* =========================================
+   IMAGE GLOW
+========================================= */
+
+.slider-glow {
+    position: absolute;
+
+    inset: -30px;
+
+    background: rgba(255, 90, 100, 0.12);
+
+    filter: blur(50px);
+
+    z-index: -1;
+}
+
+
+/* =========================================
+   SLIDER ARROWS
+========================================= */
+
+.slider-arrow {
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 38px;
+    height: 38px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(255, 120, 130, 0.7);
+
+    background: rgba(10, 10, 20, 0.7);
+
+    color: #ff7885;
+
+    font-size: 30px;
+
+    line-height: 30px;
+
+    cursor: pointer;
+
+    z-index: 5;
+
+    transition: 0.3s ease;
+}
+
+.slider-arrow:hover {
+    background: #ff6977;
+    color: #150a0d;
+
+    transform:
+        translateY(-50%)
+        scale(1.1);
+}
+
+.slider-arrow.prev {
+    left: -20px;
+}
+
+.slider-arrow.next {
+    right: -20px;
+}
+
+
+/* =========================================
+   SLIDER DOTS
+========================================= */
+
+.slider-dots {
+    position: absolute;
+
+    bottom: -30px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    display: flex;
+
+    gap: 7px;
+}
+
+.slider-dot {
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    border: none;
+
+    background: rgba(255, 150, 150, 0.35);
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.slider-dot.active {
+    width: 22px;
+
+    border-radius: 10px;
+
+    background: #ff6d7b;
+}
+
+
+/* =========================================
+   SCROLL DOWN
+========================================= */
+
+.scroll-down {
+    position: absolute;
+
+    bottom: 12px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 2px;
+
+    color: #efd9d1;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 12px;
+}
+
+.scroll-arrow {
+    font-size: 22px;
+
+    animation: scrollBounce 1.5s infinite;
+}
+
+@keyframes scrollBounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(6px);
+    }
+}
+
+/* ========================================
+   BIRTHDAY LETTER SECTION
+======================================== */
+
+.letter-section {
+    min-height: 220px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-top: 1px solid rgba(255, 140, 130, 0.15);
+    border-bottom: 1px solid rgba(255, 140, 130, 0.15);
+
+    background:
+        radial-gradient(
+            circle at 20% 50%,
+            rgba(120, 35, 45, 0.18),
+            transparent 35%
+        ),
+        #090913;
+}
+
+
+/* ========================================
+   CONTAINER
+======================================== */
+
+.letter-container {
+    width: 100%;
+    max-width: 1050px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 55px;
+
+    padding: 35px 50px;
+}
+
+
+/* ========================================
+   LETTER IMAGE
+======================================== */
+
+.letter-image {
+    width: 32%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.letter-image img {
+    width: 100%;
+    max-width: 250px;
+
+    height: auto;
+
+    object-fit: contain;
+
+    filter:
+        drop-shadow(
+            0 12px 20px rgba(0, 0, 0, 0.35)
+        );
+
+    transform: rotate(-4deg);
+
+    transition: transform 0.3s ease;
+}
+
+.letter-image img:hover {
+    transform: rotate(0deg) scale(1.03);
+}
+
+
+/* ========================================
+   LETTER CONTENT
+======================================== */
+
+.letter-content {
+    flex: 1;
+}
+
+
+/* Heading */
+
+.letter-content h2 {
+    margin-bottom: 10px;
+
+    font-family: "Caveat", cursive;
+
+    font-size: 34px;
+
+    font-weight: 500;
+
+    color: #f8ddd4;
+}
+
+.letter-content h2 span {
+    color: #ff6978;
+
+    font-size: 28px;
+
+    margin-left: 5px;
+}
+
+
+/* Paragraph */
+
+.letter-content p {
+    margin: 0;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 12px;
+
+    line-height: 1.65;
+
+    color: #ead5cf;
+}
+
+
+/* Highlight */
+
+.letter-content .letter-highlight {
+    margin-top: 8px;
+
+    color: #ff6877;
+
+    font-size: 13px;
+}
+
+
+/* ========================================
+   FAVOURITE CLICKS SECTION
+======================================== */
+
+.favourite-clicks-section {
+    min-height: 250px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        radial-gradient(
+            circle at 50% 50%,
+            rgba(100, 30, 45, 0.12),
+            transparent 60%
+        ),
+        #090913;
+
+    border-bottom: 1px solid rgba(255, 140, 130, 0.15);
+}
+
+
+/* ========================================
+   CONTAINER
+======================================== */
+
+.favourite-clicks-container {
+    width: 100%;
+    max-width: 1100px;
+
+    padding: 25px 35px 35px;
+}
+
+
+/* ========================================
+   SECTION TITLE
+======================================== */
+
+.section-title {
+    margin: 0 0 25px;
+
+    text-align: center;
+
+    font-family: "Caveat", cursive;
+
+    font-size: 32px;
+
+    font-weight: 500;
+
+    color: #f8ddd4;
+}
+
+.section-title span {
+    color: #ff6877;
+
+    font-size: 28px;
+
+    margin-left: 5px;
+}
+
+
+/* ========================================
+   PHOTOS GRID
+======================================== */
+
+.photos-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(6, minmax(0, 1fr));
+
+    align-items: center;
+
+    gap: 14px;
+}
+
+
+/* ========================================
+   POLAROID FRAME
+======================================== */
+
+.photo-frame {
+    position: relative;
+
+    width: 100%;
+
+    aspect-ratio: 1.15 / 1;
+
+    padding: 7px 7px 20px;
+
+    background: #f5d8cb;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.35);
+
+    overflow: visible;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* ========================================
+   IMAGE
+======================================== */
+
+.photo-frame img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    object-position: center center;
+
+    border: none;
+}
+
+
+/* ========================================
+   TAPE
+======================================== */
+
+.photo-frame::before {
+    content: "";
+
+    position: absolute;
+
+    top: -8px;
+    left: 50%;
+
+    width: 45px;
+    height: 13px;
+
+    transform: translateX(-50%) rotate(-2deg);
+
+    background: rgba(238, 143, 140, 0.75);
+
+    z-index: 2;
+}
+
+
+/* ========================================
+   INDIVIDUAL ROTATIONS
+======================================== */
+
+.photo-1 {
+    transform: rotate(-5deg);
+}
+
+.photo-2 {
+    transform: rotate(2deg);
+}
+
+.photo-3 {
+    transform: rotate(-2deg);
+}
+
+.photo-4 {
+    transform: rotate(3deg);
+}
+
+.photo-5 {
+    transform: rotate(-4deg);
+}
+
+.photo-6 {
+    transform: rotate(2deg);
+}
+
+
+/* ========================================
+   HOVER
+======================================== */
+
+.photo-frame:hover {
+    transform:
+        rotate(0deg)
+        translateY(-8px)
+        scale(1.04);
+
+    z-index: 5;
+
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .birthday-hero {
+        margin: 8px;
+    }
+
+    .hero-content {
+        flex-direction: column;
+
+        justify-content: center;
+
+        gap: 50px;
+
+        padding:
+            20px
+            30px
+            70px;
+    }
+
+    .hero-text {
+        width: 100%;
+
+        text-align: center;
+
+        padding-left: 0;
+    }
+
+    .hero-text p {
+        font-size: 13px;
+    }
+
+    .hero-slider {
+        width: 80%;
+    }
+
+    .scroll-down {
+        display: none;
+    }
+
+     .photos-grid {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+
+        row-gap: 25px;
+    }
+
+    .favourite-clicks-container {
+        padding: 30px 25px 40px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .letter-container {
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 20px;
+
+        padding: 40px 25px;
+    }
+
+    .letter-image {
+        width: 100%;
+    }
+
+    .letter-image img {
+        max-width: 200px;
+    }
+
+    .letter-content {
+        width: 100%;
+    }
+
+    .letter-content h2 {
+        font-size: 30px;
+    }
+
+    .letter-content p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .favourite-clicks-section {
+        min-height: auto;
+    }
+
+    .favourite-clicks-container {
+        padding: 30px 18px 40px;
+    }
+
+    .section-title {
+        font-size: 28px;
+
+        margin-bottom: 25px;
+    }
+
+    .photos-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 25px 15px;
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    .hero-top {
+        padding: 15px;
+    }
+
+    .special-one {
+        font-size: 18px;
+    }
+
+    .music-btn {
+        padding: 7px 13px;
+        font-size: 11px;
+    }
+
+    .hero-content {
+        padding:
+            20px
+            18px
+            40px;
+    }
+
+    .birthday-title {
+        font-size: 38px;
+    }
+
+    .hero-text h1 {
+        font-size: 55px;
+    }
+
+    .title-hearts {
+        font-size: 28px;
+    }
+
+    .hero-text p br {
+        display: none;
+    }
+
+    .hero-slider {
+        width: 88%;
+    }
+
+    .slider-arrow {
+        width: 32px;
+        height: 32px;
+
+        font-size: 24px;
+    }
+
+    .slider-arrow.prev {
+        left: -16px;
+    }
+
+    .slider-arrow.next {
+        right: -16px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .letter-container {
+        padding: 35px 18px;
+    }
+
+    .letter-image img {
+        max-width: 180px;
+    }
+
+    .letter-content h2 {
+        font-size: 27px;
+    }
+
+    .letter-content p {
+        font-size: 11px;
+        line-height: 1.7;
+    }
+
+}
+
+/* ========================================
+   SMALL MOBILE
+======================================== */
+
+@media (max-width: 380px) {
+
+    .photos-grid {
+        gap: 22px 10px;
+    }
+
+    .photo-frame {
+        padding: 5px 5px 16px;
+    }
+
+}
+
+
+/* ========================================
+   CELEBRATING YOU TODAY
+======================================== */
+
+.stats-section {
+    min-height: 210px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #090913;
+
+    border-top: 1px solid rgba(255, 140, 130, 0.15);
+    border-bottom: 1px solid rgba(255, 140, 130, 0.15);
+}
+
+
+/* ========================================
+   CONTAINER
+======================================== */
+
+.stats-container {
+    width: 100%;
+    max-width: 1050px;
+
+    padding: 20px 35px 30px;
+}
+
+
+/* ========================================
+   TITLE
+======================================== */
+
+.stats-section .section-title {
+    margin-bottom: 20px;
+
+    font-family: "Caveat", cursive;
+
+    font-size: 32px;
+
+    font-weight: 500;
+
+    text-align: center;
+
+    color: #f8ddd4;
+}
+
+.stats-section .section-title span {
+    color: #ff6877;
+
+    font-size: 27px;
+}
+
+
+/* ========================================
+   STATS GRID
+======================================== */
+
+.stats-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 16px;
+}
+
+
+/* ========================================
+   STAT CARD
+======================================== */
+
+.stat-card {
+    min-height: 74px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 12px 20px;
+
+    border: 1px solid rgba(255, 110, 120, 0.28);
+
+    border-radius: 13px;
+
+    background: rgba(255, 255, 255, 0.015);
+
+    transition: 0.3s ease;
+}
+
+.stat-card:hover {
+    border-color: rgba(255, 110, 120, 0.55);
+
+    background: rgba(255, 110, 120, 0.035);
+
+    transform: translateY(-3px);
+}
+
+
+/* ========================================
+   ICON
+======================================== */
+
+.stat-icon {
+    flex-shrink: 0;
+
+    width: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #ff8b82;
+
+    font-size: 35px;
+
+    text-shadow:
+        0 0 12px rgba(255, 100, 110, 0.4);
+}
+
+
+/* ========================================
+   CONTENT
+======================================== */
+
+.stat-content {
+    min-width: 0;
+}
+
+
+/* ========================================
+   NUMBER
+======================================== */
+
+.stat-number {
+    color: #ff7480;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 20px;
+
+    font-weight: 500;
+
+    line-height: 1.1;
+
+    white-space: nowrap;
+}
+
+
+/* ========================================
+   LABEL
+======================================== */
+
+.stat-label {
+    margin-top: 5px;
+
+    color: #ead5cf;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 11px;
+
+    line-height: 1.35;
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 900px) {
+
+    .stats-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 600px) {
+
+    .stats-container {
+        padding: 30px 18px;
+    }
+
+    .stats-section .section-title {
+        font-size: 29px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+    .stat-card {
+        min-height: 80px;
+
+        padding: 12px 20px;
+    }
+
+}
